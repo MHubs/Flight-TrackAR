@@ -1,5 +1,5 @@
 # Flight-TrackAR
-A fun AR iOS app that displays flights on a globe with their realtime locations
+A fun AR iOS app that displays flights on a globe with their realtime locations.
 
 Be up to date on all the latest flights all accross the world!
 
@@ -33,7 +33,7 @@ Using a pinching motion with two fingers you can scale the globe to make it bigg
 Swipe to the right of the screen to return to the globe.
 
 ### Why does it sometimes crash when selecting a flight?
-Blame the [MapBox iOS SDK](https://github.com/mapbox/mapbox-scenekit) for having poor thread and memory management
+Blame the [MapBox iOS SDK](https://github.com/mapbox/mapbox-scenekit) for having poor thread and memory management.
 
 ## Acknowledgements
 A big thank you to HackUMass for hosting a great hackathon. Another thank you to all my friends and family who have been traveling a lot recently for giving me this idea.
