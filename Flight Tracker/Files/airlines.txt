@@ -1,0 +1,43 @@
+Air Asia, AXM
+Air Baltic, BTI
+Air Serbia, ASL
+Alaska Airlines,  ASA
+Allegiant Airlines, AAY
+American Airlines, AAL
+Avior Airlines, ROI
+Azerbaijan Airlines, AHY
+Azul Airlines, AZU
+Boutique Air, BTQ
+Contour Airlines, VTE
+Delta Airlines, DAL
+Elite Airways, MNU
+Ethiopian Airlines, ETH
+Eurowings Airlines, EWG
+Frontier Airlines, FFT
+GOL Intelligent Airlines, GOL
+Hawaiian Airlines, HAL
+Iberia Airlines, IBE
+Interjet Airlines,  AIJ
+JetBlue Airlines, JBU
+Jini Air, JNA
+Mokulele Airlines, MHO
+National Airlines, NCR
+Pegasus Airlines, PGT
+Ravn Alaska Airlines, RVF
+Saudia Airlines, SVA
+Silver Airways, SIL
+SmartWings Airlines, TVS
+Southwest Airlines, SWA
+Spirit Airlines, NKS
+Sun Country Airlines, SCX
+TAME Airlines, TAE
+Transavia Airlines, TRA
+TUII Fly Airlines, TFL
+Ukraine International Airlines, AUI
+United Airlines, UAL
+ViaAir, SRY
+Vision Airlines, RBY
+Volaris Airlines, VOI
+Vueling Airlines, VLG
+Wizz Airlines, WZZ
+Xiamen Airways, CXA

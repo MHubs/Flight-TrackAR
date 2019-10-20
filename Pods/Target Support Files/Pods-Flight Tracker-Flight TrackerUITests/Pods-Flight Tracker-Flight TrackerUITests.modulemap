@@ -1,0 +1,6 @@
+framework module Pods_Flight_Tracker_Flight_TrackerUITests {
+  umbrella header "Pods-Flight Tracker-Flight TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

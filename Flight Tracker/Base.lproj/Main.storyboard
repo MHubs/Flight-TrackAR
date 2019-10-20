@@ -1,37 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
                             </arscnView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfc-S3-5y6">
+                                <rect key="frame" x="52" y="44" width="310.5" height="67"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CeR-66-eXx">
+                                    <rect key="frame" x="0.0" y="0.0" width="310.5" height="67"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntL-q4-pCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="310.5" height="67"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-5g-dSt">
+                                            <rect key="frame" x="0.0" y="0.0" width="310.5" height="67"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0Sc-5g-dSt" firstAttribute="centerY" secondItem="CeR-66-eXx" secondAttribute="centerY" id="Bd0-jN-pA9"/>
+                                        <constraint firstItem="0Sc-5g-dSt" firstAttribute="centerX" secondItem="CeR-66-eXx" secondAttribute="centerX" id="IM3-kF-ab2"/>
+                                        <constraint firstItem="0Sc-5g-dSt" firstAttribute="width" secondItem="ntL-q4-pCT" secondAttribute="width" id="aGK-up-QPJ"/>
+                                        <constraint firstItem="ntL-q4-pCT" firstAttribute="width" secondItem="CeR-66-eXx" secondAttribute="width" id="ccs-Zx-PX6"/>
+                                        <constraint firstItem="ntL-q4-pCT" firstAttribute="height" secondItem="CeR-66-eXx" secondAttribute="height" id="efV-Yf-105"/>
+                                        <constraint firstItem="ntL-q4-pCT" firstAttribute="centerY" secondItem="CeR-66-eXx" secondAttribute="centerY" id="hba-QV-g5c"/>
+                                        <constraint firstItem="0Sc-5g-dSt" firstAttribute="height" secondItem="ntL-q4-pCT" secondAttribute="height" id="qyy-Cz-eER"/>
+                                        <constraint firstItem="ntL-q4-pCT" firstAttribute="centerX" secondItem="CeR-66-eXx" secondAttribute="centerX" id="vGj-vA-wgT"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3z-xa-69g">
+                                <rect key="frame" x="0.0" y="627" width="414" height="269"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dFf-iB-k50">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqx-zq-fv8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <wkWebViewConfiguration key="configuration">
+                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                <wkPreferences key="preferences"/>
+                                            </wkWebViewConfiguration>
+                                        </wkWebView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uqx-zq-fv8" firstAttribute="centerX" secondItem="dFf-iB-k50" secondAttribute="centerX" id="JIT-qn-89s"/>
+                                        <constraint firstItem="uqx-zq-fv8" firstAttribute="centerY" secondItem="dFf-iB-k50" secondAttribute="centerY" id="ahT-Aw-dDE"/>
+                                        <constraint firstItem="uqx-zq-fv8" firstAttribute="height" secondItem="dFf-iB-k50" secondAttribute="height" id="mx2-ak-XGH"/>
+                                        <constraint firstItem="uqx-zq-fv8" firstAttribute="width" secondItem="dFf-iB-k50" secondAttribute="width" id="zjI-Xr-L6q"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Mfc-S3-5y6" firstAttribute="height" secondItem="U0K-SW-4ec" secondAttribute="height" multiplier="0.075" id="1F3-bL-0kB"/>
+                            <constraint firstItem="Mfc-S3-5y6" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="9ll-IT-HDl"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerY" secondItem="fQZ-KI-GVf" secondAttribute="centerY" id="JIq-Mm-T2n"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="B3z-xa-69g" firstAttribute="height" secondItem="U0K-SW-4ec" secondAttribute="height" multiplier="0.3" id="Xzc-8A-SWW"/>
+                            <constraint firstItem="B3z-xa-69g" firstAttribute="width" secondItem="U0K-SW-4ec" secondAttribute="width" id="ZEZ-uV-Llb"/>
+                            <constraint firstItem="Mfc-S3-5y6" firstAttribute="width" secondItem="U0K-SW-4ec" secondAttribute="width" multiplier="0.75" id="apJ-xI-hGP"/>
+                            <constraint firstItem="B3z-xa-69g" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="eH4-3h-5g3"/>
+                            <constraint firstItem="Mfc-S3-5y6" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="fB0-tx-kaS"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="ldj-ms-n5i"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstAttribute="bottom" secondItem="B3z-xa-69g" secondAttribute="bottom" id="wnF-mV-s8b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="bottomVisView" destination="B3z-xa-69g" id="Hdh-EE-2V5"/>
+                        <outlet property="flightLabel" destination="ntL-q4-pCT" id="g1H-eO-qyM"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="searchField" destination="0Sc-5g-dSt" id="bpT-ds-shO"/>
+                        <outlet property="topVisView" destination="Mfc-S3-5y6" id="4GD-6B-DmG"/>
+                        <outlet property="webView" destination="uqx-zq-fv8" id="RBc-A4-myW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="71"/>
         </scene>
     </scenes>
 </document>

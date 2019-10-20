@@ -1,0 +1,6 @@
+framework module MapboxSceneKit {
+  umbrella header "MapboxSceneKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

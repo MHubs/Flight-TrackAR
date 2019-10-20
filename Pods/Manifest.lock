@@ -1,0 +1,34 @@
+PODS:
+  - Mapbox-iOS-SDK (5.4.0)
+  - MapboxMobileEvents (0.9.5)
+  - MapboxSceneKit (0.1.0):
+    - MapboxMobileEvents (~> 0.4)
+
+DEPENDENCIES:
+  - Mapbox-iOS-SDK
+  - MapboxMobileEvents
+  - MapboxSceneKit (from `https://github.com/mapbox/mapbox-scenekit.git`, branch `queueAndFetchesCrashFixes`)
+
+SPEC REPOS:
+  trunk:
+    - Mapbox-iOS-SDK
+    - MapboxMobileEvents
+
+EXTERNAL SOURCES:
+  MapboxSceneKit:
+    :branch: queueAndFetchesCrashFixes
+    :git: https://github.com/mapbox/mapbox-scenekit.git
+
+CHECKOUT OPTIONS:
+  MapboxSceneKit:
+    :commit: e55e4ac667caadf6d3b6d03f0a9992b6b4be9176
+    :git: https://github.com/mapbox/mapbox-scenekit.git
+
+SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: 2b58f752d94e57e95b8e54f3b52569199f6efdba
+  MapboxMobileEvents: f6c21b2e59066c5c7093585de7c15adae3b63da0
+  MapboxSceneKit: f51dd12b4e82735e4571e394841ca42bcac7990f
+
+PODFILE CHECKSUM: 01c54aa9d8e9163e8832a07df0fab22ceb5cbcea
+
+COCOAPODS: 1.8.4
