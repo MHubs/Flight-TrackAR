@@ -298,8 +298,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, WKNavigationDelegate,
                             
                             
                             let airline = Files.airlines[substring]
+                            let number = String(callsign[end..<callsign.endIndex])
                             
-                            if airline != nil && search == "" || airline != nil && airline!.contains(search) {
+                            if airline != nil && search == "" || airline != nil && airline!.contains(search) || airline != nil && number.contains(search) {
                                 
                                 self.flights[(item[0] as! String)] = Flight(data: item)
                                 
